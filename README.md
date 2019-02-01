@@ -47,3 +47,9 @@ An aggregate results file of error metrics for all test images is also created :
 You need to create a generator function to replace BeeDataset.generate_training_dataset (generates a pair of images image_data, label_data) and BeeDataset.generate_predict_dataset (generates only image_data).  
 
 The labels for the beehive dataset were created using a custom [tool](https://github.com/oist/DenseObjectAnnotation).
+
+## Contact
+
+If you have any questions about this project, please contact:  
+laetitia.hebert at oist.jp  
+kasia.bozek at oist.jp  
