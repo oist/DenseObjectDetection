@@ -44,7 +44,10 @@ An aggregate results file of error metrics for all test images is also created :
 
 
 ## To adapt to another dataset
-You need to create a generator function to replace BeeDataset.generate_training_dataset (generates a pair of images image_data, label_data) and BeeDataset.generate_predict_dataset (generates only image_data).  
+
+To predict on a new dataset, you can use the script `predict_template.py`, by replacing the function `predict_data_generator` to load your own dataset.
+
+To train on a new dataset, you can use the script `train_template.py` by replacing the functions `train_data_generator` and `eval_data_generator` (generate a pair of images image_data, label_data).  
 
 The labels for the beehive dataset were created using a custom [tool](https://github.com/oist/DenseObjectAnnotation).
 
